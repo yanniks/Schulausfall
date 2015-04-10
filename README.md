@@ -1,13 +1,6 @@
 ## Schulausfall
 
-I wrote this small script to check if the content of a website changed.
+This script is rewritten for checking if the Apple Online Store is up again. If it is, open up my favorite Apple Watch model in my browser.
 
 ### Dependencies
-`md5sum`, `awk`, `curl` and `sendmail` are required. Configure those before running the script.
-
-
-### Usage
-Define the website you want to check directly after the the `./check.sh` . Then add the email adress you want to send from and the one you want to send to.
-
-### Example
-`./check.sh "http://yanniks.de" kontakt@yanniks.de kontakt@yanniks.de`
+This time, only PHP and for opening the URL a Mac.
