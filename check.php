@@ -1,8 +1,8 @@
 #!/usr/bin/env php
 <?php
 function checkstore() {
-	$content = file_get_contents("https://store.apple.com/de/");
-	if (strpos($content,"Das neue MacBook") !== false) {
+	$headers = get_headers("https://store.apple.com/de/");
+	if (strpos($headers[0],"503 Service Unavailable") === false) {
 		exec("open http://store.apple.com/de/buy-watch/apple-watch?product=MJ3U2FD/A&step=detail");
 		exec("say Store online!");
 		return;
